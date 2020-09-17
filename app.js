@@ -1,9 +1,8 @@
 const express = require('express')
-bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 
-app.use(bodyParser.json());
+app.use(express.json())
 
 app.post('/', (req, res) => {
     console.log(getDate())
